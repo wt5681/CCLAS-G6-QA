@@ -1,0 +1,17 @@
+<ivy-module version="2.0">
+  <info organisation="mincom" module="CclasAutomation" />
+  <configurations>
+    <conf name="default" />
+    <conf name="test" />
+    <conf name="j2ee" />
+    <conf name="baseline" />
+    <conf name="ellipsej" />
+    <conf name="cics" />
+  </configurations>
+  <publications>
+    <artifact />
+  </publications>
+  <dependencies>
+    <dependency org="mincom" name="flex-unit-tests" rev="${infrastructure.version}" conf="default" />
+  </dependencies>
+</ivy-module>

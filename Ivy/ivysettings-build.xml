@@ -1,0 +1,44 @@
+<ivysettings>
+	<properties file="${ivy.settings.dir}/ivysettings-build.properties" override="false"/>
+	<settings defaultResolver="${ivy.default.resolver}"/>
+	
+	<property name="ivy.checksums" value="" override="true"/>
+	
+	<include url="${ivy.default.settings.dir}/ivysettings.xml"/>
+	
+	<resolvers>
+		<ibiblio name="mincom-public" m2compatible="true" root="${ivy.build.default.public}"/>
+		<url name="mincom-ivy" m2compatible="true" checkmodified="true"> 
+			<ivy pattern="${ivy.build.default.snapshots}/${ivy.build.default.pattern}"/>
+			<artifact pattern="${ivy.build.default.snapshots}/${ivy.build.default.pattern}"/>
+		</url>
+		<url name="mincom-ivy-mwp" m2compatible="true" checkmodified="true"> 
+			<ivy pattern="${ivy.build.default.mwp}/${ivy.build.default.pattern}"/>
+			<artifact pattern="${ivy.build.default.mwp}/${ivy.build.default.pattern}"/>
+		</url>
+		<url name="releases_ji" m2compatible="true"> 
+			<ivy pattern="${ivy.build.default.releases_ji}/${ivy.build.default.pattern}"/>
+			<artifact pattern="${ivy.build.default.releases_ji}/${ivy.build.default.pattern}"/>
+		</url>
+		<url name="releases_mwp" m2compatible="true"> 
+			<ivy pattern="${ivy.build.default.releases_mwp}/${ivy.build.default.pattern}"/>
+			<artifact pattern="${ivy.build.default.releases_mwp}/${ivy.build.default.pattern}"/>
+		</url>
+		
+		<url name="mincom-internal" m2compatible="true">
+			<ivy pattern="${ivy.build.default.internal}/${ivy.build.default.pattern}"/>
+			<artifact pattern="${ivy.build.default.internal}/${ivy.build.default.pattern}"/>
+		</url>
+		
+		<chain name="released_ji" returnFirst="true" dual="true">
+			<resolver ref="releases_ji"/>
+			<resolver ref="releases_mwp"/>
+			<resolver ref="mincom-ivy"/>
+			<resolver ref="mincom-internal"/>
+			<resolver ref="mincom-public"/>
+		</chain>
+
+	</resolvers>
+	
+	<caches resolutionCacheDir="${ivy.cache}" />
+</ivysettings>

@@ -1,0 +1,1736 @@
+13:57:08.733 INFO [10] org.openqa.jetty.util.Credential - Checking Resource aliases
+13:57:08.749 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 85
+
+
+13:57:08.749 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getNewBrowserSession[*firefox, http://localhost:9085/ria/ui.jsp, ] on session null
+13:57:08.749 INFO [10] org.openqa.selenium.server.BrowserSessionFactory - creating new remote session
+13:57:08.765 DEBUG [10] org.openqa.selenium.server.browserlaunchers.BrowserLauncherFactory - Requested browser string '*firefox' matches *firefox 
+13:57:08.765 DEBUG [10] org.openqa.selenium.browserlaunchers.locators.CombinedFirefoxLocator - Discovering Firefox 2...
+13:57:08.780 DEBUG [10] org.openqa.selenium.browserlaunchers.locators.BrowserLocator - Discovering Firefox 2...
+13:57:08.780 DEBUG [10] org.openqa.selenium.browserlaunchers.locators.BrowserLocator - Checking whether Firefox 2 launcher at :'C:\Program Files\Mozilla Firefox\firefox.exe' is valid...
+13:57:08.780 DEBUG [10] org.openqa.selenium.browserlaunchers.locators.BrowserLocator - Discovered valid Firefox 2 launcher  : 'C:\Program Files\Mozilla Firefox\firefox.exe'
+13:57:08.780 INFO [10] org.openqa.selenium.server.BrowserSessionFactory - Allocated session de14708f78044bd4a57d0e84d2762caf for http://localhost:9085/ria/ui.jsp, launching...
+13:57:08.780 WARN [10] org.openqa.selenium.net.Urls - It looks like your baseUrl (http://localhost:9085/ria/ui.jsp) is pointing to a file, not a directory (it doesn't end with a /).  We're going to have to strip off the last part of the pathname.
+13:57:08.796 DEBUG [10] org.openqa.selenium.server.browserlaunchers.ResourceExtractor - Extracting /customProfileDirCUSTFFCHROME to C:\DOCUME~1\c9vh5614\LOCALS~1\Temp\customProfileDirde14708f78044bd4a57d0e84d2762caf
+13:57:08.890 INFO [10] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Preparing Firefox profile...
+13:57:11.984 INFO [10] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Launching Firefox...
+13:57:12.015 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 10 more secs
+13:57:12.015 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:57:13.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:57:13.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 9 more secs
+13:57:13.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:57:14.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:57:14.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 8 more secs
+13:57:14.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:57:15.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:57:15.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 7 more secs
+13:57:15.031 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:57:15.734 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?seleniumStart=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_57411&sessionId=de14708f78044bd4a57d0e84d2762caf&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822235727&sequenceNumber=0 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:57:15.734 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------allocating new CommandQueue for sel_57411
+13:57:15.750 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser de14708f78044bd4a57d0e84d2762caf/:top sel_57411 posted START NEW
+13:57:15.750 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.750 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_57411 marked as just loaded
+13:57:15.750 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() called
+13:57:15.750 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : true
+13:57:15.765 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 6 more secs
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() 
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getTitle",target:"",value:""}
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.765 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getTitle",target:"",value:""}
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() called
+13:57:15.765 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.765 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() -> json={command:"getTitle",target:"",value:""}
+13:57:15.765 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_57411: json={command:"getTitle",target:"",value:""}
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_57411&sessionId=de14708f78044bd4a57d0e84d2762caf&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822235807&sequenceNumber=1 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser de14708f78044bd4a57d0e84d2762caf/:top sel_57411 posted OK,
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() called
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() -> OK,
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - wait is over: window 'null' was seen at last (sel_57411)
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_57411 marked as NOT just loaded
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - Current uniqueId set to sel_57411, frameAddress = :top
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() 
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"setContext",target:"de14708f78044bd4a57d0e84d2762caf",value:""}
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() called
+13:57:15.812 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"setContext",target:"de14708f78044bd4a57d0e84d2762caf",value:""}
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() -> json={command:"setContext",target:"de14708f78044bd4a57d0e84d2762caf",value:""}
+13:57:15.812 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_57411: json={command:"setContext",target:"de14708f78044bd4a57d0e84d2762caf",value:""}
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_57411&sessionId=de14708f78044bd4a57d0e84d2762caf&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822235843&sequenceNumber=2 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 13
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser de14708f78044bd4a57d0e84d2762caf/:top sel_57411 posted OK
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() called
+13:57:15.843 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.843 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK
+13:57:15.843 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() -> OK
+13:57:15.843 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,de14708f78044bd4a57d0e84d2762caf on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.859 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 64
+
+
+13:57:15.875 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getAcceptLanguage[, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getAcceptLanguage' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(getAcceptLanguage,,)
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() 
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getAcceptLanguage",target:"",value:""}
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() called
+13:57:15.875 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.875 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getAcceptLanguage",target:"",value:""}
+13:57:15.875 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() -> json={command:"getAcceptLanguage",target:"",value:""}
+13:57:15.875 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_57411: json={command:"getAcceptLanguage",target:"",value:""}
+13:57:15.890 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_57411&sessionId=de14708f78044bd4a57d0e84d2762caf&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822235898&sequenceNumber=3 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 64
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser de14708f78044bd4a57d0e84d2762caf/:top sel_57411 posted OK,chrome://global/locale/intl.properties
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,chrome://global/locale/intl.properties
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() called
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,chrome://global/locale/intl.properties
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() -> OK,chrome://global/locale/intl.properties
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,chrome://global/locale/intl.properties on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.906 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,chrome://global/locale/intl.properties on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:15.906 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() 
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() called
+13:57:15.906 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:57:15.906 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() -> json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:57:15.921 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_57411: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:57:25.922 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+13:57:25.922 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() -> ERROR: Command timed out after 10 seconds.
+13:57:25.922 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: ERROR: Command timed out on session de14708f78044bd4a57d0e84d2762caf
+13:57:25.922 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: Command timed out on session de14708f78044bd4a57d0e84d2762caf
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:26.938 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_57411 commandHolder sel_57411 getCommand() 
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() called
+13:57:26.938 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:57:36.939 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+13:57:36.939 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_57411 commandResultHolder sel_57411 getResult() -> ERROR: Command timed out after 10 seconds.
+13:57:36.939 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: ERROR: Command timed out on session de14708f78044bd4a57d0e84d2762caf
+13:57:36.939 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: Command timed out on session de14708f78044bd4a57d0e84d2762caf
+13:57:37.954 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:37.954 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:37.954 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:37.954 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:37.954 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:37.954 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session de14708f78044bd4a57d0e84d2762caf
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:57:37.954 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session de14708f78044bd4a57d0e84d2762caf
+13:57:38.970 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:38.970 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:38.970 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:38.970 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:38.970 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:38.970 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session de14708f78044bd4a57d0e84d2762caf
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:57:38.970 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session de14708f78044bd4a57d0e84d2762caf
+13:57:39.986 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:39.986 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:39.986 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:39.986 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:39.986 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:39.986 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session de14708f78044bd4a57d0e84d2762caf
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:57:39.986 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session de14708f78044bd4a57d0e84d2762caf
+13:57:41.002 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:57:41.002 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session de14708f78044bd4a57d0e84d2762caf
+13:57:41.002 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session de14708f78044bd4a57d0e84d2762caf
+13:57:41.033 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session de14708f78044bd4a57d0e84d2762caf going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:57:41.033 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_57411
+13:57:41.033 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session de14708f78044bd4a57d0e84d2762caf
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:57:41.033 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session de14708f78044bd4a57d0e84d2762caf
+13:58:14.457 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 85
+
+
+13:58:14.457 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getNewBrowserSession[*firefox, http://localhost:9085/ria/ui.jsp, ] on session null
+13:58:14.457 INFO [10] org.openqa.selenium.server.BrowserSessionFactory - creating new remote session
+13:58:14.457 DEBUG [10] org.openqa.selenium.server.browserlaunchers.BrowserLauncherFactory - Requested browser string '*firefox' matches *firefox 
+13:58:14.457 INFO [10] org.openqa.selenium.server.BrowserSessionFactory - Allocated session 9f7f50e99a0c4825a1ff4a2750713c28 for http://localhost:9085/ria/ui.jsp, launching...
+13:58:14.457 WARN [10] org.openqa.selenium.net.Urls - It looks like your baseUrl (http://localhost:9085/ria/ui.jsp) is pointing to a file, not a directory (it doesn't end with a /).  We're going to have to strip off the last part of the pathname.
+13:58:14.473 DEBUG [10] org.openqa.selenium.server.browserlaunchers.ResourceExtractor - Extracting /customProfileDirCUSTFFCHROME to C:\DOCUME~1\c9vh5614\LOCALS~1\Temp\customProfileDir9f7f50e99a0c4825a1ff4a2750713c28
+13:58:14.520 INFO [10] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Preparing Firefox profile...
+13:58:17.254 INFO [10] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Launching Firefox...
+13:58:17.270 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 10 more secs
+13:58:17.270 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:58:18.270 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:58:18.270 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 9 more secs
+13:58:18.270 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:58:19.317 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:58:19.379 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 8 more secs
+13:58:19.379 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:58:20.380 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:58:20.380 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 7 more secs
+13:58:20.380 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?seleniumStart=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_48791&sessionId=9f7f50e99a0c4825a1ff4a2750713c28&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822300738&sequenceNumber=0 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------allocating new CommandQueue for sel_48791
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 9f7f50e99a0c4825a1ff4a2750713c28/:top sel_48791 posted START NEW
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_48791 marked as just loaded
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() called
+13:58:20.755 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.755 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : true
+13:58:20.755 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 6 more secs
+13:58:20.755 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() 
+13:58:20.755 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getTitle",target:"",value:""}
+13:58:20.770 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getTitle",target:"",value:""}
+13:58:20.770 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() -> json={command:"getTitle",target:"",value:""}
+13:58:20.770 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_48791: json={command:"getTitle",target:"",value:""}
+13:58:20.770 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.770 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() called
+13:58:20.770 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_48791&sessionId=9f7f50e99a0c4825a1ff4a2750713c28&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822300799&sequenceNumber=1 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 9f7f50e99a0c4825a1ff4a2750713c28/:top sel_48791 posted OK,
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() called
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() -> OK,
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - wait is over: window 'null' was seen at last (sel_48791)
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_48791 marked as NOT just loaded
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - Current uniqueId set to sel_48791, frameAddress = :top
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() 
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"setContext",target:"9f7f50e99a0c4825a1ff4a2750713c28",value:""}
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() called
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"setContext",target:"9f7f50e99a0c4825a1ff4a2750713c28",value:""}
+13:58:20.801 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() -> json={command:"setContext",target:"9f7f50e99a0c4825a1ff4a2750713c28",value:""}
+13:58:20.801 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_48791: json={command:"setContext",target:"9f7f50e99a0c4825a1ff4a2750713c28",value:""}
+13:58:20.833 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_48791&sessionId=9f7f50e99a0c4825a1ff4a2750713c28&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822300832&sequenceNumber=2 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 13
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:58:20.833 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.833 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 9f7f50e99a0c4825a1ff4a2750713c28/:top sel_48791 posted OK
+13:58:20.848 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.848 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK
+13:58:20.848 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.848 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() called
+13:58:20.848 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.848 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK
+13:58:20.848 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() -> OK
+13:58:20.848 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,9f7f50e99a0c4825a1ff4a2750713c28 on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 64
+
+
+13:58:20.864 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getAcceptLanguage[, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getAcceptLanguage' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(getAcceptLanguage,,)
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() 
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getAcceptLanguage",target:"",value:""}
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() called
+13:58:20.864 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.864 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getAcceptLanguage",target:"",value:""}
+13:58:20.864 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() -> json={command:"getAcceptLanguage",target:"",value:""}
+13:58:20.864 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_48791: json={command:"getAcceptLanguage",target:"",value:""}
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_48791&sessionId=9f7f50e99a0c4825a1ff4a2750713c28&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822300885&sequenceNumber=3 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 64
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 9f7f50e99a0c4825a1ff4a2750713c28/:top sel_48791 posted OK,chrome://global/locale/intl.properties
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,chrome://global/locale/intl.properties
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() called
+13:58:20.880 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.880 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,chrome://global/locale/intl.properties
+13:58:20.880 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() -> OK,chrome://global/locale/intl.properties
+13:58:20.895 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,chrome://global/locale/intl.properties on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.895 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,chrome://global/locale/intl.properties on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:20.911 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() 
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() called
+13:58:20.911 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:20.911 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:58:20.911 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() -> json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:58:20.911 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_48791: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:58:30.927 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+13:58:30.927 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() -> ERROR: Command timed out after 10 seconds.
+13:58:30.927 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: ERROR: Command timed out on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:30.927 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: Command timed out on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:31.943 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.CommandHolder - 	sel_48791 commandHolder sel_48791 getCommand() 
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""}
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() called
+13:58:31.943 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:58:41.959 DEBUG [10] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+13:58:41.959 DEBUG [10] org.openqa.selenium.server.CommandResultHolder - 	sel_48791 commandResultHolder sel_48791 getResult() -> ERROR: Command timed out after 10 seconds.
+13:58:41.959 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: ERROR: Command timed out on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:41.959 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: Command timed out on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:42.975 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:42.975 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:42.975 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:42.975 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:42.975 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:42.975 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session 9f7f50e99a0c4825a1ff4a2750713c28
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:58:42.975 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:43.975 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:43.975 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:43.975 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:43.975 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:43.975 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:43.975 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session 9f7f50e99a0c4825a1ff4a2750713c28
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:58:43.975 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:44.991 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:44.991 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:44.991 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:44.991 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:44.991 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:44.991 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session 9f7f50e99a0c4825a1ff4a2750713c28
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:58:44.991 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:45.991 DEBUG [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:58:45.991 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://localhost:9085/ria/ui.jsp, ] on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:45.991 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:58:45.991 DEBUG [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 9f7f50e99a0c4825a1ff4a2750713c28 going to doCommand(open,http://localhost:9085/ria/ui.jsp,)
+13:58:45.991 DEBUG [10] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_48791
+13:58:45.991 ERROR [10] org.openqa.selenium.server.commands.SeleniumCoreCommand - Exception running 'open 'command on session 9f7f50e99a0c4825a1ff4a2750713c28
+java.lang.IllegalStateException: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added
+	at org.openqa.selenium.server.CommandQueue.doCommandWithoutWaitingForAResponse(CommandQueue.java:125)
+	at org.openqa.selenium.server.CommandQueue.doCommand(CommandQueue.java:102)
+	at org.openqa.selenium.server.FrameGroupCommandQueueSet.doCommand(FrameGroupCommandQueueSet.java:435)
+	at org.openqa.selenium.server.commands.SeleniumCoreCommand.execute(SeleniumCoreCommand.java:38)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:611)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:405)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:149)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+13:58:46.007 INFO [10] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR Server Exception: unexpected command json={command:"open",target:"http://localhost:9085/ria/ui.jsp",value:""} in place before new command open could be added on session 9f7f50e99a0c4825a1ff4a2750713c28
+13:59:29.666 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 90
+
+
+13:59:29.666 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getNewBrowserSession[*firefox, http://172.31.121.104:8080/ria/ui.jsp, ] on session null
+13:59:29.666 INFO [13] org.openqa.selenium.server.BrowserSessionFactory - creating new remote session
+13:59:29.666 DEBUG [13] org.openqa.selenium.server.browserlaunchers.BrowserLauncherFactory - Requested browser string '*firefox' matches *firefox 
+13:59:29.666 INFO [13] org.openqa.selenium.server.BrowserSessionFactory - Allocated session 6e902166f14d44e9813fb57b35506ebc for http://172.31.121.104:8080/ria/ui.jsp, launching...
+13:59:29.666 WARN [13] org.openqa.selenium.net.Urls - It looks like your baseUrl (http://172.31.121.104:8080/ria/ui.jsp) is pointing to a file, not a directory (it doesn't end with a /).  We're going to have to strip off the last part of the pathname.
+13:59:29.666 DEBUG [13] org.openqa.selenium.server.browserlaunchers.ResourceExtractor - Extracting /customProfileDirCUSTFFCHROME to C:\DOCUME~1\c9vh5614\LOCALS~1\Temp\customProfileDir6e902166f14d44e9813fb57b35506ebc
+13:59:29.729 INFO [13] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Preparing Firefox profile...
+13:59:32.260 INFO [13] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Launching Firefox...
+13:59:32.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 10 more secs
+13:59:32.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:59:33.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:59:33.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 9 more secs
+13:59:33.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:59:34.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : false
+13:59:34.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 8 more secs
+13:59:34.276 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for condition for 1000 more ms
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?seleniumStart=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822375128&sequenceNumber=0 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------allocating new CommandQueue for sel_23241
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted START NEW
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_23241 marked as just loaded
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - got condition? : true
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - waiting for window 'null' local frame 'null' for 7 more secs
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getTitle",target:"",value:""}
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getTitle",target:"",value:""}
+13:59:35.135 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getTitle",target:"",value:""}
+13:59:35.135 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:35.151 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getTitle",target:"",value:""}
+13:59:35.151 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822375180&sequenceNumber=1 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - wait is over: window 'null' was seen at last (sel_23241)
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - sel_23241 marked as NOT just loaded
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - Current uniqueId set to sel_23241, frameAddress = :top
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"setContext",target:"6e902166f14d44e9813fb57b35506ebc",value:""}
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"setContext",target:"6e902166f14d44e9813fb57b35506ebc",value:""}
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"setContext",target:"6e902166f14d44e9813fb57b35506ebc",value:""}
+13:59:35.182 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.182 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"setContext",target:"6e902166f14d44e9813fb57b35506ebc",value:""}
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822375205&sequenceNumber=2 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 13
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK
+13:59:35.260 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.276 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:35.276 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.260 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK
+13:59:35.276 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK
+13:59:35.276 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,6e902166f14d44e9813fb57b35506ebc on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 64
+
+
+13:59:35.292 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getAcceptLanguage[, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getAcceptLanguage' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getAcceptLanguage,,)
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getAcceptLanguage",target:"",value:""}
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:35.292 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.292 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getAcceptLanguage",target:"",value:""}
+13:59:35.292 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getAcceptLanguage",target:"",value:""}
+13:59:35.292 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getAcceptLanguage",target:"",value:""}
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822375321&sequenceNumber=3 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 64
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,chrome://global/locale/intl.properties
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,chrome://global/locale/intl.properties
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:35.323 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,chrome://global/locale/intl.properties
+13:59:35.323 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.323 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,chrome://global/locale/intl.properties
+13:59:35.323 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,chrome://global/locale/intl.properties on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.323 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,chrome://global/locale/intl.properties on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 103
+
+
+13:59:35.338 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[http://172.31.121.104:8080/ria/ui.jsp, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'open' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(open,http://172.31.121.104:8080/ria/ui.jsp,)
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"open",target:"http://172.31.121.104:8080/ria/ui.jsp",value:""}
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:35.338 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.338 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"open",target:"http://172.31.121.104:8080/ria/ui.jsp",value:""}
+13:59:35.338 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"open",target:"http://172.31.121.104:8080/ria/ui.jsp",value:""}
+13:59:35.338 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"open",target:"http://172.31.121.104:8080/ria/ui.jsp",value:""}
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822375917&sequenceNumber=4 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 13
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:35.917 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:35.932 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK
+13:59:35.932 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK
+13:59:35.932 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK on session 6e902166f14d44e9813fb57b35506ebc
+13:59:35.932 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:36.010 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:36.010 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.026 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.026 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.026 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.026 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:36.026 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:36.026 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822376241&sequenceNumber=5 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 20
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,test
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,test
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:36.245 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:36.245 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,test
+13:59:36.245 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,test
+13:59:36.245 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,test on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.245 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,test on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:36.776 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:36.776 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.776 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:36.776 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:36.776 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822377185&sequenceNumber=6 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 20
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,test
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,test
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:37.182 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:37.182 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,test
+13:59:37.182 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,test
+13:59:37.182 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,test on session 6e902166f14d44e9813fb57b35506ebc
+13:59:37.182 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,test on session 6e902166f14d44e9813fb57b35506ebc
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:37.698 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:37.698 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:37.698 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:37.698 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:37.698 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822378273&sequenceNumber=7 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 34
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,DummyApplication11
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,DummyApplication11
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:38.276 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:38.276 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,DummyApplication11
+13:59:38.276 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,DummyApplication11
+13:59:38.276 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:38.276 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:38.792 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:38.792 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:38.792 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:38.792 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:38.792 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822378809&sequenceNumber=8 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 34
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,DummyApplication11
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,DummyApplication11
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:38.807 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,DummyApplication11
+13:59:38.807 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:38.807 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,DummyApplication11
+13:59:38.807 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:38.807 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:39.323 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:39.323 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:39.323 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:39.323 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:39.323 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822379567&sequenceNumber=9 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 34
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,DummyApplication11
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,DummyApplication11
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:39.573 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:39.573 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,DummyApplication11
+13:59:39.573 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,DummyApplication11
+13:59:39.573 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:39.573 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:40.089 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.089 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.089 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.089 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:40.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822380117&sequenceNumber=10 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 34
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,DummyApplication11
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,DummyApplication11
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:40.120 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:40.120 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,DummyApplication11
+13:59:40.120 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,DummyApplication11
+13:59:40.120 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.120 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,DummyApplication11 on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 81
+
+
+13:59:40.636 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getEverything[getMFUIApplication, ] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'getEverything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(getEverything,getMFUIApplication,)
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:40.636 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:40.636 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.636 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:40.636 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"getEverything",target:"getMFUIApplication",value:""}
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822381078&sequenceNumber=11 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 21
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted OK,login
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: OK,login
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:41.089 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: OK,login
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> OK,login
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: OK,login on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.089 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,login on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+User-Agent: Java/1.6.0_25
+Host: localhost:1245
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-Length: 98
+
+
+13:59:41.089 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: everything[doMFUILogin, am2122,,R100,SYSAD] on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Executing 'everything' selenium core command on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Session 6e902166f14d44e9813fb57b35506ebc going to doCommand(everything,doMFUILogin,am2122,,R100,SYSAD)
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() 
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: json={command:"everything",target:"doMFUILogin",value:"am2122,,R100,SYSAD"}
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() called
+13:59:41.089 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:41.104 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: json={command:"everything",target:"doMFUILogin",value:"am2122,,R100,SYSAD"}
+13:59:41.104 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"everything",target:"doMFUILogin",value:"am2122,,R100,SYSAD"}
+13:59:41.104 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"everything",target:"doMFUILogin",value:"am2122,,R100,SYSAD"}
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822381266&sequenceNumber=12 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 494
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>()
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - putting command: ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>()
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - ..command put?: true
+13:59:41.276 DEBUG [13] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>()
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:41.276 DEBUG [13] org.openqa.selenium.server.CommandResultHolder - 	sel_23241 commandResultHolder sel_23241 getResult() -> ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>()
+13:59:41.276 DEBUG [13] org.openqa.selenium.server.commands.SeleniumCoreCommand - Got result: ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>() on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.276 INFO [13] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: ##ERROR##ArgumentError: Error #1063: Argument count mismatch on mfui.external.automated::ApplicationAPI/doMFUILogin(). Expected 2, got 1. 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at MethodInfo-23755() 	at Function/http://adobe.com/AS3/2006/builtin::apply() 	at flash.external::ExternalInterface$/_callIn() 	at Function/<anonymous>() on session 6e902166f14d44e9813fb57b35506ebc
+13:59:41.276 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+13:59:51.308 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+13:59:51.308 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+13:59:51.308 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822392305&sequenceNumber=13 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+13:59:52.324 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:02.325 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:02.325 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:02.325 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822403316&sequenceNumber=14 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:03.341 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:13.341 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:13.341 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:13.341 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822414335&sequenceNumber=15 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:14.373 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:24.389 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:24.389 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:24.389 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822425389&sequenceNumber=16 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:25.389 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:35.406 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:35.406 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:35.406 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822436764&sequenceNumber=17 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:36.781 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:46.797 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:46.797 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:46.797 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822447776&sequenceNumber=18 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:47.797 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:00:57.813 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:00:57.813 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:00:57.813 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822458792&sequenceNumber=19 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:00:58.829 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:01:08.830 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:01:08.830 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:01:08.830 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822469799&sequenceNumber=20 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:01:09.846 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:01:19.846 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:01:19.846 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:01:19.846 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822480859&sequenceNumber=21 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:01:20.862 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:01:30.879 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:01:30.879 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:01:30.879 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822491868&sequenceNumber=22 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:01:31.879 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:01:41.895 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:01:41.895 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:01:41.895 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822502876&sequenceNumber=23 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:01:42.895 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:01:52.911 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:01:52.911 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:01:52.911 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822513884&sequenceNumber=24 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:01:53.912 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:03.928 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:03.928 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:03.928 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822524905&sequenceNumber=25 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:02:04.944 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:14.960 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:14.960 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:14.960 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822535976&sequenceNumber=26 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:02:15.976 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:25.977 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:25.977 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:25.977 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822547026&sequenceNumber=27 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:02:27.039 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:37.040 DEBUG [17] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:37.040 DEBUG [17] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:37.040 DEBUG [17] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822558026&sequenceNumber=28 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:02:38.040 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:48.056 DEBUG [15] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:48.056 DEBUG [15] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:48.056 DEBUG [15] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822569031&sequenceNumber=29 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:02:49.056 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:02:59.073 DEBUG [12] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:02:59.073 DEBUG [12] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:02:59.073 DEBUG [12] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822580089&sequenceNumber=30 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:03:00.089 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:03:10.105 DEBUG [16] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:03:10.105 DEBUG [16] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:03:10.105 DEBUG [16] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822591097&sequenceNumber=31 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:03:11.105 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s
+14:03:21.121 DEBUG [11] org.openqa.selenium.server.SingleEntryAsyncQueue - data from polling: null
+14:03:21.121 DEBUG [11] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() -> json={command:"retryLast",target:"",value:""}
+14:03:21.121 DEBUG [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - res to sel_23241: json={command:"retryLast",target:"",value:""}
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - req: POST /selenium-server/driver/?retry=true&localFrameAddress=top&seleniumWindowName=&uniqueId=sel_23241&sessionId=6e902166f14d44e9813fb57b35506ebc&counterToMakeURsUniqueAndSoStopPageCachingInTheBrowser=1325822602105&sequenceNumber=32 HTTP/1.1
+Host: localhost:1245
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.25) Gecko/20111212 Firefox/3.6.25
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive: 115
+Connection: keep-alive
+Content-Length: 16
+Content-Type: text/plain; charset=UTF-8
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.SeleniumDriverResourceHandler - Browser 6e902166f14d44e9813fb57b35506ebc/:top sel_23241 posted RETRY
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.FrameGroupCommandQueueSet - ---------retrieving CommandQueue for sel_23241
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.CommandHolder - 	sel_23241 commandHolder sel_23241 getCommand() called
+14:03:22.121 DEBUG [14] org.openqa.selenium.server.SingleEntryAsyncQueue - waiting for data for at most 10 more s

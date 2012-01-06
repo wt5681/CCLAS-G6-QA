@@ -1,0 +1,121 @@
+<!--***************************************************************************
+    This build file starts a ria lite and runs selenium automated tests
+	
+	Depends on
+		-Ant common build scripts (for checkin macro)
+		-FlexUI/build-baseline-ind.xml
+		
+	Example Usage
+		ant -f automate.xml -Dtest.server.url=http://msdvml63.dev.mincom.com:9080/ria/ -Denv.WORKSPACE=C:/mincom/workspace
+		ant -f parallel.xml -Dtest.server.url=http://msdvml63.dev.mincom.com:9080/ria/ -Denv.WORKSPACE=/mincom/workspace
+****************************************************************************-->
+<project name="Automate" default="run.tests">
+
+	<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+	<property name="test.server.url" value="" />
+	<property name="test.selenium.port" value="1234" />
+	<property name="build.area" value="${env.WORKSPACE}/buildarea/" />
+	<property name="report.enabled" value="false" />
+    <property name="src.dir" value="src" />
+	<!--
+		Shutdown and clean
+	-->
+	<target name="clean">
+		<antcall target="stop.selenium">
+		</antcall>
+	</target>
+
+	<target name="flexauto.build">
+		<mkdir dir="dist" />
+		<javac srcdir="${src.dir}" destdir="dist" debug="true" debuglevel="lines,vars,source">
+			<src path="common" />
+			<classpath>
+				<fileset dir="${build.area}/flexautomated" includes="*.jar" />
+			</classpath>
+		</javac>
+		<jar destfile="${build.area}/flexautomated/FlexAutomated.jar" basedir="dist" />
+	</target>
+
+	<!--
+		Start selenium server on the specified port
+	-->
+	<target name="start.selenium">
+		<!-- http://wiki.openqa.org/display/SRC/Selenium-RC+and+Continuous+Integration -->
+		<java classname="org.openqa.selenium.server.SeleniumServer" fork="true" spawn="true">
+			<classpath>
+				<path>
+					<fileset dir="${build.area}/flexautomated" includes="*.jar"/>
+				</path>
+			</classpath>
+			<arg line="-userExtensions ${build.area}/ellipse-rc/user-extensions.js -port ${test.selenium.port} -singleWindow -log selenium.log" />
+		</java>
+
+		<echo message="Waiting for selenium server to start on port ${test.selenium.port}..."/>
+		<waitfor maxwait="10" maxwaitunit="second" checkevery="1" timeoutproperty="selenium.timeout" >
+			<http url="http://localhost:${test.selenium.port}/selenium-server/user-extensions.js"/>
+		</waitfor>
+		<fail if="selenium.timeout" message="Selenium server did not start" />
+		<echo message="Selenium server has started!"/>
+	</target>
+
+	<!--
+		Stop selenium server
+	-->
+	<target name="stop.selenium">
+		<get taskname="selenium-shutdown" src="http://localhost:${test.selenium.port}/selenium-server/driver/?cmd=shutDownSeleniumServer" dest="result.txt" ignoreerrors="true" />
+	</target>
+
+	<!--
+		Run the junit tests 
+	-->
+	<target name="run.tests">
+
+		<path id="flex.automated.classpath">
+			<fileset dir="${build.area}/flexautomated/" includes="**/*.jar" />
+		</path>
+
+		<mkdir dir="${build.area}/flexautomated/reports" />
+
+
+		<junit printsummary="on" haltonerror="false" fork="yes" forkmode="once" haltonfailure="false" failureproperty="tests.failed" showoutput="true">
+			<jvmarg value="-Dtest.server.url=${test.server.url}" />
+			<jvmarg value="-Dtest.selenium.port=${test.selenium.port}" />
+			<jvmarg value="-Dtest.server.sso=${test.server.sso}" />
+			<jvmarg value="-Dtest.browser=${test.browser}" />
+			<jvmarg value="-Dtest.username=${test.username}" />
+			<jvmarg value="-Dtest.password=${test.password}" />
+			<jvmarg value="-Dtest.district=${test.district}" />
+			<jvmarg value="-Dtest.position=${test.position}" />
+			<jvmarg value="-Dtest.workspace=${test.workspace}" />
+			<classpath>
+				<path refid="flex.automated.classpath" />
+			</classpath>
+			<formatter type="xml" />
+			<batchtest todir="${build.area}/flexautomated/reports">
+				<fileset dir="${src.dir}">
+					<include name="**/*Test.java" />
+					<exclude name="**/Abstract*.java" />
+					<exclude name="**/*MFUI*.java" />
+				</fileset>
+			</batchtest>
+
+		</junit>
+		<junitreport todir="${build.area}/flexautomated/reports">
+			<fileset dir="${build.area}/flexautomated/reports">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${build.area}/flexautomated/reports" />
+		</junitreport>
+
+	</target>
+
+	<target name="copy.tests">
+		<copy todir="${env.WORKSPACE}">
+			<fileset dir="${build.area}/flexautomated/reports">
+				<include name="*.xml" />
+				<exclude name="TESTS-TestSuites.xml"/>
+			</fileset>
+		</copy>
+	</target>
+</project>

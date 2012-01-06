@@ -1,0 +1,216 @@
+<!--***************************************************************************
+
+    This build file contains tasks to start and stop a selenium hub and run tests on the associated grid.
+    These tasks shaould be called via grid.xml (unless you know what you're doing or are experimenting :-)
+
+ **************************************************************************** -->
+
+<project name="Grid-Automate" default="run.tests">
+
+  <import file="gbuild.xml" />
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- default set of tests to run -->
+  <property name="test.set" value="pass"/>
+
+  <!-- check test.set has a valid value -->
+  <assert message="Unrecognized value (${test.set}) for 'test.set'. Must be one of: all, pass, fail.">
+    <bool>
+      <or>
+	<equals arg1="${test.set}" arg2="all"/>
+	<equals arg1="${test.set}" arg2="pass"/>
+	<equals arg1="${test.set}" arg2="fail"/>
+      </or>
+    </bool>
+  </assert>
+
+  <!-- set up properties and values for the possible test sets -->
+  <property name="pass.dir" value="src"/>
+  <property name="fail.dir" value="fail"/>
+  <property name="all.dir" value="${pass.dir}:${fail.dir}"/>
+  <property name="common.dir" value="common" />
+
+  <path id="pass.source.path">
+    <fileset dir="${pass.dir}">
+      <include name="**/*Test.java"/>
+      <exclude name="**/Abstract*.java" />
+    </fileset>
+  </path>
+
+  <path id="fail.source.path">
+    <fileset dir="${fail.dir}">
+      <include name="**/*Test.java"/>
+      <exclude name="**/Abstract*.java" />
+    </fileset>
+  </path>
+
+  <path id="all.source.path">
+    <path refid="pass.source.path"/>
+    <path refid="fail.source.path"/>
+  </path>
+
+  <!-- define properties and paths for the current run --> 
+  <switch value="${test.set}">
+    <case value="pass">
+      <property name="src.dir" value="${pass.dir}"/>
+      <path id="test.set.source.path">
+	<path refid="pass.source.path"/>
+      </path>
+    </case>
+    <case value="fail">
+      <property name="src.dir" value="${fail.dir}"/>
+      <path id="test.set.source.path">
+	<path refid="fail.source.path"/>
+      </path>
+    </case>
+    <case value="all">
+      <property name="src.dir" value="${all.dir}"/>
+      <path id="test.set.source.path">
+	<path refid="all.source.path"/>
+      </path>
+    </case>
+  </switch>
+
+
+  <!-- !@! move these elsewhere -->
+  <property name="test.server.url" value="http://msdvml45.dev.mincom.com:8180/ria/" />
+  <property name="test.selenium.port" value="${selenium.hub.port}" />
+  <property name="test.browser" value="*firefox" />
+
+  <property name="build.area" value="${env.WORKSPACE}/buildarea/" />
+  <property name="run.all.tests" value="true" />
+  <property name="report.enabled" value="false" />
+
+  <!--
+      clean
+  -->
+  <target name="clean">
+    <delete dir="dist" quiet="true"/>
+    <delete file="${build.area}/flexautomated/FlexAutomated.jar" quiet="true"/>
+    <delete dir="${build.area}/flexautomated/reports" quiet="true"/>
+  </target>
+
+  <target name="flexauto.build" depends="ivy.flex.automated">
+    <mkdir dir="dist" />
+    <javac srcdir="${src.dir}" destdir="dist" debug="true" debuglevel="lines,vars,source">
+      <src path="${common.dir}" />
+      <classpath>
+	<fileset dir="${build.area}/flexautomated" includes="*.jar" />
+      </classpath>
+    </javac>
+    <jar destfile="${build.area}/flexautomated/FlexAutomated.jar" basedir="dist" />
+  </target>
+
+  <!--
+      The number of threads to run tests on (in parallel) equals then number of RCs in the current grid.
+      This is determined by interrogating the hub via the count.rcs target
+      <property name="num.grid.rcs" value="12" />
+  -->
+
+  <tempfile property="grid.data.file"/>
+
+  <scriptdef name="count.rcs.js" language="javascript" src="${basedir}/countrcs.js"/> 
+
+  <property name="grid.data.URL" value="http://localhost:${selenium.hub.port}/console" />
+
+  <target name="load.grid.data" depends="ensure.selenium.hub">
+    <get src="${grid.data.URL}" dest="${grid.data.file}"/>
+    <loadfile srcFile="${grid.data.file}" property="grid.data.string"/>
+    <delete file="${grid.data.file}"/>
+  </target>
+
+  <target name="count.rcs" depends="load.grid.data">
+    <count.rcs.js/>
+    <echo message="Current Grid has ${num.grid.rcs} RCs."/>
+  </target>
+
+  <!--
+      Run the junit tests 
+  -->
+  <target name="run.tests" depends="count.rcs, flexauto.build">
+
+    <path id="flex.automated.classpath">
+      <fileset dir="${build.area}/flexautomated/" includes="**/*.jar" >
+	<exclude name="ant.jar"/>
+      </fileset>
+    </path>
+
+    <!--
+    <copy file="${basedir}/lib/ellipse-rc.jar" todir="${build.area}/flexautomated" overwrite="true"/>
+    -->
+
+    <mkdir dir="${build.area}/flexautomated/reports" />
+
+    <junitreport todir="${build.area}/flexautomated/reports">
+      <fileset dir="${build.area}/flexautomated/reports">
+	<include name="TEST-*.xml" />
+      </fileset>
+      <report format="frames" todir="${build.area}/flexautomated/reports" />
+    </junitreport>
+    <foreach target="run.single.test" maxthreads="${num.grid.rcs}" inheritall="true" inheritrefs="true" parallel="true" param="test.source.absolute">
+      <path refid="test.set.source.path"/>
+    </foreach>
+
+  </target>
+
+  <target name="run.single.test">
+    <path id="flex.automated.classpath">
+      <fileset dir="${build.area}/flexautomated/" includes="**/*.jar" >
+	<exclude name="ant.jar"/>
+      </fileset>
+    </path>
+
+    <pathconvert property="test.source.relative">
+      <fileset file="${test.source.absolute}" />
+      <map from="${basedir}/src/" to="" />
+    </pathconvert>
+
+    <!-- introduce random delay to try and start up swamping the app server too much -->
+    <property name="test.delay.limit" value="3" />
+    <math result="delay" datatype="int">
+        <op op="rint">
+            <op op="*">
+                <num value="${test.delay.limit}"/>
+                <op op="random"/>
+            </op>
+        </op>
+    </math>
+
+    <sleep seconds="${delay}" />
+
+    <junit printsummary="on" haltonerror="false" timeout="1000000" fork="yes" haltonfailure="false" failureproperty="tests.failed" showoutput="true">
+
+      <jvmarg value="-Dtest.server.url=${test.server.url}"/>
+      <jvmarg value="-Dtest.selenium.port=${test.selenium.port}" />
+      <jvmarg value="-Dtest.server.sso=${test.server.sso}" />
+      <jvmarg value="-Dtest.browser=${test.browser}"/>
+      <jvmarg value="-Dtest.username=${test.username}" />
+      <jvmarg value="-Dtest.password=${test.password}" />
+      <jvmarg value="-Dtest.district=${test.district}" />
+      <jvmarg value="-Dtest.position=${test.position}" />
+      <jvmarg value="-Dtest.workspace=${test.workspace}" />
+      <jvmarg value="-Dtest.timeout.factor=${test.timeout.factor}" />
+      <classpath>
+	<path refid="flex.automated.classpath" />
+      </classpath>
+      <formatter type="xml" />
+      <batchtest todir="${build.area}/flexautomated/reports">
+	<fileset dir="${pass.dir}">
+	  <filename name="${test.source.relative}" />
+	</fileset>
+	<fileset dir="${fail.dir}">
+	  <filename name="${test.source.relative}" />
+	</fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="copy.tests">
+    <copy todir="${env.WORKSPACE}">
+      <fileset dir="${build.area}/flexautomated/reports">
+	<include name="*.xml" />
+      </fileset>
+    </copy>
+  </target>
+</project>
